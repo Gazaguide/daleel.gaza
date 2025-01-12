@@ -180,49 +180,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        // Dynamic Job Data
-        const jobs = [
-            {
-                title: "مدير تسويق",
-                company: "شركة الابتكار",
-                date: "10 يناير 2025",
-                description: "فرصة مميزة للعمل كمدير تسويق في شركة الابتكار...",
-                link: "jobsinfo.html"
-            },
-            {
-                title: "محلل بيانات",
-                company: "مركز التحليل",
-                date: "08 يناير 2025",
-                description: "نبحث عن محلل بيانات متمكن للعمل بدوام كامل...",
-                link: "jobsinfo.html"
-            },
-            // Add more jobs here
-        ];
 
-        // Render Jobs
-        const jobsList = document.getElementById('jobs-list');
-        jobs.forEach(job => {
-            const jobCard = `
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h5 class="card-title">${job.title}</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">الشركة: ${job.company}</h6>
-                            <p class="card-text">
-                                تاريخ الإعلان: ${job.date}<br>
-                                وصف مختصر: ${job.description}
-                            </p>
-                            <div class="btn-center">
-                                <a href="${job.link}" class="btn btn-primary btn-sm"> المزيد من التفاصيل</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            `;
-            jobsList.innerHTML += jobCard;
-        });
-    </script>
 </body>
 </html>
